@@ -86,7 +86,6 @@ The YieldNN model is a custom 1D CNN-based architecture designed for time-series
 - **Output**: Binary classification (Pick/NoPick)
 
 ## Dataset directory structure
-## Dataset directory structure
 
 ```text
 datasets/
