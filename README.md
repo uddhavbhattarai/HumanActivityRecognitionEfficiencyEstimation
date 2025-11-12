@@ -85,10 +85,30 @@ The YieldNN model is a custom 1D CNN-based architecture designed for time-series
 - **Filters**: Progressive increase from 16 to 128 channels
 - **Output**: Binary classification (Pick/NoPick)
 
-### Data Format
+## Dataset directory structure
+## Dataset directory structure
 
-Expected input data format:
-```
-CSV Headers: ["rpi_utc_time", "gps_utc_time", "GPS_TOW", "LAT", "LON", "HEIGHT", "ax", "ay", "az", "raw_mass"]
-Used Channels: ["GPS_TOW", "LAT", "LON", "HEIGHT", "ax", "ay", "az", "raw_mass"]
-```
+```text
+datasets/
+├── SantaMaria_CNN_LSTM/
+│   ├── cart_data/
+│   │   ├── MM-DD-YY_train-ready_all_carts.csv
+│   │   ├── ...
+│   │   └── MM-DD-YY_train-ready_all_carts.csv
+│   ├── break_log/
+│   │   ├── MM-DD-YY_break_log.csv
+│   │   ├── ...
+│   │   └── MM-DD-YY_break_log.csv
+│   └── harvested_trays.xlsx
+│
+├── SantaMaria_2024/
+│   ├── DD-MM-YY/
+│   │   ├── cart1.csv
+│   │   ├── cart2.csv
+│   │   ├── ...
+│   │   └── cartN.csv
+│   ├── break_log/
+│   │   ├── MM-DD-YY_break_log.csv
+│   │   ├── ...
+│   │   └── MM-DD-YY_break_log.csv
+│   └── harvested_trays_seasonlong.xlsx
