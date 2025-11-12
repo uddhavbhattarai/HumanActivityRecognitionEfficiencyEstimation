@@ -1,13 +1,13 @@
 import os
 import papermill as pm
 
-data_root = "/media/uddhav/My_Passport/00_STAVROS_LAB/Harvest_2024"
+data_root = "/home/user/HumanActivityRecognitionEfficiencyEstimation/datasets"
 # Path to the single notebook you want to run
 notebook_to_run = (
-    "/home/uddhav/WorkerActivityRecognitionEfficiencyEstimation/Step3_1_classify_seasonlong_data_pick_nopick.ipynb"
+    "/home/user/HumanActivityRecognitionEfficiencyEstimation/Step3_1_classify_seasonlong_data_pick_nopick.ipynb"
 )
 
-FIELD_NAME = "SantaMaria"  # SantaMaria or Salinas
+FIELD_NAME = "SantaMaria_2024"  # SantaMaria or Salinas
 
 data_folder = os.path.join(data_root, "datasets", FIELD_NAME)
 
